@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+.nav-menu{
+    /* clear: both; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .nav-menu-left{
+    float: left;
+}
+.nav-menu-right{
+    float: right;
+} */
+.nav-menu-left img{
+    width: 4rem;
+    height: 4.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-menu-left h1{
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-menu-left h1 .medi{
+    color: #1A76D1;
+}
+
+.nav-menu-right ul.menu-links{
+    list-style: none;
+    display: inline-block;
+}
+.nav-menu-right ul.menu-links li, .nav-menu-right button.book-appointment{
+    display: inline-block;
+}
+.nav-menu-right ul.menu-links li{
+    position: relative;
+}
+.nav-menu-right button.book-appointment{
+    padding: 2rem 2rem;
+    background-color: #1A76D1;
+    border: none;
+    border-radius: 0px;
+    color: white;
+    font-weight: 600;
+}
+.nav-menu-right ul.menu-links>li>a{
+    text-decoration: none;
+    color: #2C2D3F;
+    padding: 1rem;
+    position: relative;
+}
+.nav-menu-right ul.menu-links>li>a:hover{
+    color: #1A76D1;
+}
+.nav-menu-right ul.menu-links>li>a::before{
+    content: "";
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-radius:5px 5px 0px 0px;
+    background-color: #1A76D1;
+    /* transition: width 1s linear; */
+}
+.nav-menu-right ul.menu-links>li>a:hover::before{
+    width: 100%;
+    transition: width 1s linear;
+}
+
+.nav-menu-right ul.menu-links li ul.dropdown{
+    width: 150px;
+    background-color: aquamarine;
+    display: none;
+}
+.nav-menu-right ul.menu-links li ul.dropdown li.dropdown-item{
+    display: block;
+}
+.nav-menu-right ul.menu-links li:hover ul.dropdown{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 1000000000000;
+}
+.main-ready-cart{
+    margin-top: 50px;
+    display: flex;
+    gap:20px;
+    text-align: center;
+    justify-content: center;
+}
+.read{
+    padding: 60px;
+    flex-basis: 27%;
+    position: relative;
+}
+.re>i{
+    font-size: 30px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding: 30px;
+    color: #1A76D1;
+    position: absolute;
+    top: 0px;
+    left: 140px;
+}
+.main-ready-cart .read:hover + .re>i{
+    background-color: #1A76D1;
+    color: white;
+    border: 0px;
+}
+.color-btn{
+    background-color: aquamarine;
+    padding: 50px;
+    text-align: center;
+}
+.color-btn a{
+    padding: 20px 70px;
+    border-radius: 4px;
+    background-color: #2C2D3F;
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+.color-btn a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #1A76D1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    border-radius: 4px;
+    transition: all 1s ease;
+}
+.color-btn a:hover::before{
+    transform: scaleX(0);
+    transform-origin: 50%;
+}
+
+
+.btn{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.btn button{
+    padding: 25px 60px;
+    background-color: #1A76D1;
+    color:white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
